@@ -2,20 +2,21 @@ import java.util.Scanner;
 
 public class Uppercaseandlowercase
 {
-    char alphabet;
+    static char ch,ch2;
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);//Scanner object
         System.out.println("Enter Alphabet: ");
-        char alphabet = scanner.next().charAt(0);// declared variable
+       ch= scanner.nextLine().charAt(0);// declared variable
 
-        if((alphabet>='A')&& (alphabet<='Z')){
-            System.out.println("You enter Uppercase Alphabet");
+        if (ch>='A' && ch<='Z'){
+           ch2= Character.toLowerCase(ch);
+            System.out.println("LowerCase " + ch2);
         }
         else {
-            System.out.println("You enter Lowercase Alphabet");
+            ch2=Character.toUpperCase(ch);
+            System.out.println("UpperCase " + ch2);
         }
-
 
 
     }
